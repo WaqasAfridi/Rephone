@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Redirecting…</title>
+	</head>
+	<body>
+		<script>
+			(function () {
+				var base = "/Rephone/";
+				fetch(base)
+					.then(function (response) {
+						if (!response.ok) throw new Error("index fetch failed");
+						return response.text();
+					})
+					.then(function (html) {
+						document.open();
+						document.write(html);
+						document.close();
+					})
+					.catch(function () {
+						// fallback: go to base root
+						window.location.replace(base);
+					});
+			})();
+		</script>
+	</body>
+</html>
