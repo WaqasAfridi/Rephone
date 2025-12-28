@@ -11,7 +11,7 @@ function Navbar() {
           {/* Logo */}
           <Link to='/' className="flex items-center gap-3">
             <img
-              src="/Rephone-logo.png"
+              src={import.meta.env.BASE_URL + "/Rephone-logo.png"}
               alt="Rephone logo"
               className="w-28 sm:w-32 md:w-40 lg:w-44 object-contain"
             />

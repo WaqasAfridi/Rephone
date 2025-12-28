@@ -66,7 +66,7 @@ function Footer() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white rounded-xl p-2.5 shadow-lg">
                   <img
-                    src="/Rephone-logo.png"
+                    src={import.meta.env.BASE_URL + "/Rephone-logo.png"}
                     alt="Rephone logo"
                     className="w-24 h-auto object-contain"
                   />

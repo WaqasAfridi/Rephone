@@ -56,7 +56,7 @@ function HowItWorks() {
           {/* Illustration (left on lg, top on small). Centered within its column. */}
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="/how-it-works-illustration.png"
+              src={import.meta.env.BASE_URL + "/how-it-works-illustration.png"}
               alt="How Rephone repair service works"
               className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
               loading="lazy"

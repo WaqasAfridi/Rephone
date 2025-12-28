@@ -90,7 +90,7 @@ function NotFoundPage() {
                   </div>
 
                   <img
-                    src="/repairing-expert-image-404Page.png"
+                    src={import.meta.env.BASE_URL + "/repairing-expert-image-404Page.png"}
                     alt="Repair expert illustration"
                     className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl select-none"
                     loading="eager"

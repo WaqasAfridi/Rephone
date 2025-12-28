@@ -68,7 +68,7 @@ function Banner() {
                 </div>
 
                 <img
-                  src="/repairing-expert-image.png"
+                  src={import.meta.env.BASE_URL + "/repairing-expert-image.png"}
                   alt="Repairing expert holding a smartphone"
                   loading="lazy"
                   className="relative z-10 max-w-full h-auto max-h-80 sm:max-h-90 md:max-h-105 lg:max-h-120 object-contain drop-shadow-2xl"
